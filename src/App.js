@@ -10,7 +10,7 @@ import {useDataLayerValue} from "./DataLayer";
 const spotify = new SpotifyWebApi();
 
 function App() {
-  const [{user, token}, dispatch] = useDataLayerValue();
+  const [{token}, dispatch] = useDataLayerValue();
 
   // run code based on a given condition
   // runs once if bracket is empty
@@ -27,6 +27,7 @@ function App() {
       });
       
       spotify.setAccessToken(_token);
+      console.log(_token);
 
       spotify.getMe().then(user => {
         dispatch({
@@ -34,8 +35,15 @@ function App() {
           user: user
         });
       });
+
+      spotify.getUserPlaylists().then((playlists) => {
+        dispatch({
+          type: 'SET_PLAYLIST',
+          playlists: playlists
+        })
+      });
     }
-  }, []);
+  },);
 
   return (
     <div className="app">{token ? <Player spotify={spotify} /> : <Login />}</div>
