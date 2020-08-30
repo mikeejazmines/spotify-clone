@@ -20,11 +20,8 @@ Aside from ReactJS, this also connects to firebase and spotify api.
 
 ### Dependencies used
 * react-router-dom
-* material-ui (really cool library for icons and other ui needs!)
-    * material-ui/icons
-    * material-ui/code
+* spotify-web-api-js
 * firebase
-* react-tinder-card
 
 ## Learn More
 
