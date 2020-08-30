@@ -21,6 +21,8 @@ Aside from ReactJS, this also connects to firebase and spotify api.
 ### Dependencies used
 * react-router-dom
 * spotify-web-api-js
+* @material-ui/core
+* @material-ui/icons
 * firebase
 
 ## Learn More
