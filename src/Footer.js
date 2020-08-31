@@ -7,17 +7,21 @@ import ShuffleIcon from "@material-ui/icons/Shuffle";
 import RepeatIcon from "@material-ui/icons/Repeat";
 import PlaylistPlayIcon from "@material-ui/icons/PlaylistPlay";
 import VolumeDownIcon from "@material-ui/icons/VolumeDown";
-import {Grid, Slider} from "@material-ui/core";
+import { Grid, Slider } from "@material-ui/core";
 
 function Footer() {
   return (
     <div className="footer">
       <div className="footer__left">
-          <img className="footer__albumLogo" src="https://upload.wikimedia.org/wikipedia/en/f/f8/Taylor_Swift_-_Folklore.png" alt="Stream folklore"/>
-          <div className="footer__songInfo">
-              <h4>Cardigan</h4>
-              <p>Taylor Swift</p>
-          </div>
+        <img
+          className="footer__albumLogo"
+          src="https://upload.wikimedia.org/wikipedia/en/f/f8/Taylor_Swift_-_Folklore.png"
+          alt="Stream folklore"
+        />
+        <div className="footer__songInfo">
+          <h4>Cardigan</h4>
+          <p>Taylor Swift</p>
+        </div>
       </div>
 
       <div className="footer__center">
@@ -29,19 +33,18 @@ function Footer() {
       </div>
 
       <div className="footer__right">
-          <Grid container spacing={2}>
-              <Grid item>
-                  <PlaylistPlayIcon/>
-              </Grid>
-              <Grid item>
-                  <VolumeDownIcon/>
-              </Grid>
-              <Grid item xs>
-                  <Slider/>
-              </Grid>
+        <Grid container spacing={2}>
+          <Grid item>
+            <PlaylistPlayIcon />
           </Grid>
+          <Grid item>
+            <VolumeDownIcon />
+          </Grid>
+          <Grid item xs>
+            <Slider />
+          </Grid>
+        </Grid>
       </div>
-
     </div>
   );
 }

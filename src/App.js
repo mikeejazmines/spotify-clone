@@ -4,13 +4,12 @@ import Login from "./Login";
 import { getTokenFromUrl } from "./spotify";
 import SpotifyWebApi from "spotify-web-api-js";
 import Player from "./Player";
-import {useDataLayerValue} from "./DataLayer";
-
+import { useDataLayerValue } from "./DataLayer";
 
 const spotify = new SpotifyWebApi();
 
 function App() {
-  const [{token}, dispatch] = useDataLayerValue();
+  const [{ token }, dispatch] = useDataLayerValue();
 
   // run code based on a given condition
   // runs once if bracket is empty
@@ -22,31 +21,33 @@ function App() {
 
     if (_token) {
       dispatch({
-        type: 'SET_TOKEN',
-        token: _token
+        type: "SET_TOKEN",
+        token: _token,
       });
-      
+
       spotify.setAccessToken(_token);
       console.log(_token);
 
-      spotify.getMe().then(user => {
+      spotify.getMe().then((user) => {
         dispatch({
-          type: 'SET_USER',
-          user: user
+          type: "SET_USER",
+          user: user,
         });
       });
 
       spotify.getUserPlaylists().then((playlists) => {
         dispatch({
-          type: 'SET_PLAYLIST',
-          playlists: playlists
-        })
+          type: "SET_PLAYLIST",
+          playlists: playlists,
+        });
       });
     }
-  },);
+  });
 
   return (
-    <div className="app">{token ? <Player spotify={spotify} /> : <Login />}</div>
+    <div className="app">
+      {token ? <Player spotify={spotify} /> : <Login />}
+    </div>
   );
 }
 
