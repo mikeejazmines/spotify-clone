@@ -4,11 +4,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## About the project
 
-This is the second video of my quarantine react js learning. This is also part of my learn js/reactjs through developing mini apps. This build in particular was done by following CleverProgrammer's (Build a Spotify Clone with REACT JS)[https://youtu.be/pnkuI8KXW_8] Youtube video.
+This is the second video of my quarantine react js learning. This is also part of my learn js/reactjs through developing mini apps. This build in particular was done by following CleverProgrammer's [Build a Spotify Clone with REACT JS](https://youtu.be/pnkuI8KXW_8) Youtube video.
 
 They have other videos such as an Amazon clone, Tiktok clone, WhatsApp clone etc. Good for beginners who want to learn reactjs by example.
 
-My first build (Tinder) can be found (here)[https://github.com/mikeejazmines/tinder-clone]
+My first build (Tinder) can be found [here](https://github.com/mikeejazmines/tinder-clone)
 
 Aside from ReactJS, this also connects to firebase and spotify api.
 
