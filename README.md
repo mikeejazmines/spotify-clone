@@ -10,7 +10,11 @@ They have other videos such as an Amazon clone, Tiktok clone, WhatsApp clone etc
 
 My first build (Tinder) can be found [here](https://github.com/mikeejazmines/tinder-clone)
 
-Aside from ReactJS, this also connects to firebase and spotify api.
+Aside from ReactJS, this also connects to the spotify api.
+
+## Future iterations
+
+To develop this further, functionality can be added to the buttons to simulate the play, pause, next, and other buttons.
 
 ## How to run
 
@@ -23,7 +27,6 @@ Aside from ReactJS, this also connects to firebase and spotify api.
 * spotify-web-api-js
 * @material-ui/core
 * @material-ui/icons
-* firebase
 
 ## Learn More
 
